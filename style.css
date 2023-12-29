@@ -32,7 +32,7 @@ body {
 
   /*background: color image no repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
-  background: 100vh;
+  background-image: 100vh
 }
 
 body * {
@@ -43,7 +43,6 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  /*border: 1px solid red;*/
   margin: 56px auto 0px;
   padding: 0px 24px;
 }
@@ -84,11 +83,19 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: anima-kj 0.3s
+  ;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+   animation: anima-jk 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+
+
 }
 
 #switch span {
@@ -173,5 +180,26 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+
+/*animação part*/
+
+@keyframes anima-jk {
+  from {
+   left: 0;
+  }
+  to {
+  left: 50%;
+
+  }
+}
+@keyframes anima-kj {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
