@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 :root {
@@ -31,8 +32,9 @@ body {
   */
 
   /*background: color image no repeat position/size */
-  background: var(--bg-url) no-repeat top center/cover;
-  background-image: 100vh;
+  background: var(--bg-url) no-repeat top center;
+  height: 100vh;
+ 
 }
 
 body * {
