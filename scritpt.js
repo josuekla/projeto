@@ -8,7 +8,7 @@ function toggleMode() {
   if(html.classList.contains("light")) {
   //SUBSTITUIR A IMAGEM
   img.setAttribute("src","./assets/avatar-light.png")
-  img.setAttribute("alt", "Foto de Maryk Brito usando óculos de sol, com jaqueta preta e um fundo gradiente azul com roxo ")
+
 
   } 
   else{
